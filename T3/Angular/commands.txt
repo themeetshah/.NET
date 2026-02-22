@@ -1,0 +1,40 @@
+npm install -g @angular/cli
+ng new prj_01
+cd .\prj_01
+ng serve
+(ng generate component header / ng g c header)
+ng generate component footer
+app.ts ->  imports: [RouterOutlet, Header, Footer],
+
+ng generate component login-form 
+-> login-form.html
+
+ng generate component data-transformers
+-> data-transformers.html
+-> data-transformers.ts
+    ---> import UpperCasePipe, LowerCasePipe, CurrencyPipe ; update imports[]
+
+// create custom pipe
+ng generate pipe reverse-pipe
+-> reverse-pipe.ts : write logic for reversing
+
+data-transformers.ts 
+-> import ReversePipe
+-> update imports[]
+
+data-transformers.html
+-> use reverse
+
+ng generate component todo-list
+todo-list.ts 
+-> import CommonModules
+-> update imports[] 
+-> todos
+
+todo-list.html
+
+Data Binding 
+	1. InterPolation  ->declare in ts then use in html {{}}
+	2. Property Binding-> ts->html(one way) [property]='Value'
+	3. Two Way Binding -> ts->html  [(ngModel)]='Value'
+	4. Event Binding -> html->ts(ONe wany) (event)="Method()"
