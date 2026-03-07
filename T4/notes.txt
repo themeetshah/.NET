@@ -1,0 +1,23 @@
+API Testing:
+    dotnet new webapi -n DemoAPI
+    cd DemoAPI
+    dotnet run
+    Program.cs => /weatherforecast
+    Run => url_in_console/weatherforecast
+    create Models => create User.cs => create Id, Name, Email attributes for User class
+    create Controllers => create UserController.cs
+    dotnet add package Scalar.AspNetCore
+    Program.cs => 
+        using Scalar.AspNetCore
+        builder.Services.AddControllers(); 
+        app.MapControllers();
+        app.MapScalarApiReference();
+
+    test apis on: url_in_console/scalar/v1
+
+
+Use Services:
+    dotnet new webapi -n Module2
+    create Models => User.cs
+    create Controllers => UserController.cs
+    create Services => UserService.cs
