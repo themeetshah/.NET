@@ -1,0 +1,12 @@
+D:\Ed\CODES\SEM-5\.NET\T4\CleanStructure\UserService.Core\bin\Debug\net9.0\UserService.Core.deps.json
+D:\Ed\CODES\SEM-5\.NET\T4\CleanStructure\UserService.Core\bin\Debug\net9.0\UserService.Core.dll
+D:\Ed\CODES\SEM-5\.NET\T4\CleanStructure\UserService.Core\bin\Debug\net9.0\UserService.Core.pdb
+D:\Ed\CODES\SEM-5\.NET\T4\CleanStructure\UserService.Core\obj\Debug\net9.0\UserService.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Ed\CODES\SEM-5\.NET\T4\CleanStructure\UserService.Core\obj\Debug\net9.0\UserService.Core.AssemblyInfoInputs.cache
+D:\Ed\CODES\SEM-5\.NET\T4\CleanStructure\UserService.Core\obj\Debug\net9.0\UserService.Core.AssemblyInfo.cs
+D:\Ed\CODES\SEM-5\.NET\T4\CleanStructure\UserService.Core\obj\Debug\net9.0\UserService.Core.csproj.CoreCompileInputs.cache
+D:\Ed\CODES\SEM-5\.NET\T4\CleanStructure\UserService.Core\obj\Debug\net9.0\UserService.Core.sourcelink.json
+D:\Ed\CODES\SEM-5\.NET\T4\CleanStructure\UserService.Core\obj\Debug\net9.0\UserService.Core.dll
+D:\Ed\CODES\SEM-5\.NET\T4\CleanStructure\UserService.Core\obj\Debug\net9.0\refint\UserService.Core.dll
+D:\Ed\CODES\SEM-5\.NET\T4\CleanStructure\UserService.Core\obj\Debug\net9.0\UserService.Core.pdb
+D:\Ed\CODES\SEM-5\.NET\T4\CleanStructure\UserService.Core\obj\Debug\net9.0\ref\UserService.Core.dll

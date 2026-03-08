@@ -4,6 +4,8 @@ API Testing:
     dotnet run
     Program.cs => /weatherforecast
     Run => url_in_console/weatherforecast
+
+Use Controllers:
     create Models => create User.cs => create Id, Name, Email attributes for User class
     create Controllers => create UserController.cs
     dotnet add package Scalar.AspNetCore
@@ -15,9 +17,61 @@ API Testing:
 
     test apis on: url_in_console/scalar/v1
 
-
 Use Services:
     dotnet new webapi -n Module2
     create Models => User.cs
     create Controllers => UserController.cs
     create Services => UserService.cs
+    Program.cs =>
+        builder.Services.AddSingleton<Module2.Services.UserService>();
+
+Use Interface:
+    dotnet new webapi -n Module3
+    create Models => User.cs
+    create Controllers => UserController.cs
+    create Services => UserService.cs
+    create Interfaces => IUserService.cs
+    Services =>
+        Implement IUserService Interface to UserService
+    Program.cs =>
+        builder.Services.AddSingleton<IUserService, UserService>();
+
+Use Repositories:
+    dotnet new webapi -n Module4
+    create Models => User.cs
+    create Controllers => UserController.cs
+    create Services => UserService.cs
+    create Interfaces => IUserService.cs
+    Services =>
+        Implement IUserService Interface to UserService
+    Program.cs =>
+        builder.Services.AddSingleton<IUserService, UserService>();
+        builder.Services.AddSingleton<Module4.Repositories.UserRepositories>();
+
+Clean Structure:
+    dotnet new sln -n UserService
+    dotnet new classlib -n UserService.Core -f net9.0
+    dotnet new classlib -n UserService.Infrastructure -f net9.0
+    dotnet new webapi -n UserService.API -f net9.0
+    dotnet sln add UserService.Core
+    dotnet sln add UserService.Infrastructure
+    dotnet sln add UserService.API
+    dotnet add UserService.API reference UserService.Core
+    dotnet add UserService.API reference UserService.Infrastructure
+    dotnet add UserService.Infrastructure reference UserService.Core
+
+    UserService.API =>
+        Controllers/UserController.cs
+
+    UserService.Core =>
+        Entities => Models => User.cs
+        Entities => Interfaces => IUserService.cs
+
+    UserService.Infrastructure =>
+        Repositories => UserRepository.cs
+        Services => UserService.cs
+
+    Program.cs
+
+    cd UserService.API
+    dotnet run
